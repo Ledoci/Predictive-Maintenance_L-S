@@ -13,6 +13,6 @@ print(df.dtypes)                           # Check what data types we have
 count_defect=df["defect"].value_counts()
 print(count_defect)
 clean_up={"defect":{"y":1,"n":0}}
-df.replace(clean_up,inplace=True)
-df.to_csv("C:/Users/dell/Desktop/Munich/04-LMU exchange/05_data science/detective maintainance/1_data_set_v1.csv",index=False)
+df.replace(clean_up,inplace=True)         # Replace the defact categories into numeric value
+df.to_csv("C:/Users/dell/Desktop/Munich/04-LMU exchange/05_data science/detective maintainance/1_data_set_v1.csv",index=False)   
 
